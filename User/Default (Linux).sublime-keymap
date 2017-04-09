@@ -1,0 +1,27 @@
+[
+	{ "keys": ["ctrl+n"], "command": "advanced_new_file_new"},
+	{ "keys": ["ctrl+alt+n"], "command": "new_file" },
+
+	{ "keys": ["ctrl+d"], "command": "duplicate_line" },
+	{ "keys": ["ctrl+y"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+
+	{ "keys": ["ctrl+shift+o"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+
+    { "keys": ["ctrl+pagedown"], "command": "next_view_in_stack" },
+    { "keys": ["ctrl+pageup"], "command": "prev_view_in_stack" },
+
+    { "keys": ["ctrl+tab"], "command": "next_view" },
+    { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+
+    { "keys": ["ctrl+shift+w"], "command": "close_other_tabs" },
+
+    { "keys": ["ctrl+shift+i"], "command": "simple_require" },
+    { "keys": ["ctrl+shift+e"], "command": "export_require" },
+    { "keys": ["alt+enter"], "command": "require_from_word" },
+
+    { "keys": ["alt+1"], "command": "toggle_side_bar" },
+
+    { "keys": ["alt+delete"], "command": "advanced_new_file_delete" },
+    { "keys": ["alt+shift+delete"], "command": "advanced_new_file_delete", "args": {"current": true} },
+    { "keys": ["alt+m"], "command": "advanced_new_file_move" },
+]

@@ -1,0 +1,121 @@
+{
+	"always_show_minimap_viewport": true,
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "<",
+			"selector": "text.html"
+		},
+		{
+			"characters": ".",
+			"selector": "source.js"
+		}
+	],
+	"bold_folder_labels": true,
+	"caret_extra_bottom": 1,
+	"caret_extra_top": 1,
+	"caret_style": "blink",
+	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Monokai.tmTheme",
+	"extra_file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace"
+	],
+	"extra_folder_exclude_patterns":
+	[
+		"node_modules",
+		".svn",
+		".git",
+		".hg",
+		"CVS"
+	],
+	"fade_fold_buttons": false,
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace"
+	],
+	"folder_exclude_patterns":
+	[
+		"node_modules",
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"/media/fred/Storage/dev/js-stack-from-scratch/coverage",
+		"/media/fred/Storage/dev/js-stack-from-scratch/lib",
+		"/media/fred/Storage/dev/js-stack-from-scratch/node_modules"
+	],
+	"font_size": 8,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"overlay_scroll_bars": "enabled",
+	"shift_tab_unindent": true,
+	"theme": "Boxy Monokai.sublime-theme",
+	"theme_accent_orange": true,
+	"theme_autocomplete_item_selected_colored": true,
+	"theme_dirty_accent_lime": true,
+	"theme_dirty_colored_always": true,
+	"theme_find_panel_atomized": true,
+	"theme_find_panel_close_hidden": true,
+	"theme_find_panel_font_sm": true,
+	"theme_find_panel_padding_xs": true,
+	"theme_find_panel_size_xxs": true,
+	"theme_icons_materialized": true,
+	"theme_quick_panel_size_lg": true,
+	"theme_scrollbar_semi_overlayed": true,
+	"theme_sidebar_folder_arrow": true,
+	"theme_sidebar_icon_saturation_md": true,
+	"theme_sidebar_indent_xs": true,
+	"theme_size_xs": true,
+	"theme_statusbar_font_xs": true,
+	"theme_tab_arrows_hidden": true,
+	"theme_tab_selected_overlined": true,
+	"theme_tooltips_font_lg": true,
+	"translate_tabs_to_spaces": true
+}

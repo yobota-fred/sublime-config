@@ -1,0 +1,14 @@
+{
+    "quotes": "single",
+    "semicolon_free": true,
+    "var": "const",
+    "omit_extensions": ["js", "jsx"],
+    "import": "detect",
+    "detect_prefer_import": true,
+    "import_undefined_vars": true,
+    "alias": {
+        "redux-thunk": "thunkMiddleware",
+        "socket.io": "socketIO",
+        "react-jss": "injectSheet",
+    },
+}
