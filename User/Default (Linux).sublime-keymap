@@ -24,4 +24,51 @@
     { "keys": ["alt+delete"], "command": "advanced_new_file_delete" },
     { "keys": ["alt+shift+delete"], "command": "advanced_new_file_delete", "args": {"current": true} },
     { "keys": ["alt+m"], "command": "advanced_new_file_move" },
+
+    // switch default paste behaviour
+    { "keys": ["ctrl+v"], "command": "paste_and_indent" },
+    { "keys": ["ctrl+shift+v"], "command": "paste" },
+
+    // replace default with subwords
+    { "keys": ["ctrl+left"], "command": "move", "args": {"by": "subwords", "forward": false} },
+    { "keys": ["ctrl+right"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
+    { "keys": ["ctrl+shift+left"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
+    { "keys": ["ctrl+shift+right"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
+
+    // origami (to match byobu)
+    { "keys": ["alt+up"], "command": "travel_to_pane", "args": {"direction": "up"} },
+    { "keys": ["alt+right"], "command": "travel_to_pane", "args": {"direction": "right"} },
+    { "keys": ["alt+down"], "command": "travel_to_pane", "args": {"direction": "down"} },
+    { "keys": ["alt+left"], "command": "travel_to_pane", "args": {"direction": "left"} },
+    
+    { "keys": ["ctrl+f2"], "command": "create_pane", "args": {"direction": "right", "give_focus": true} },
+    { "keys": ["shift+f2"], "command": "create_pane", "args": {"direction": "down", "give_focus": true} },
+
+    { "keys": ["alt+shift+up"], "command": "carry_file_to_pane", "args": {"direction": "up"} },
+    { "keys": ["alt+shift+right"], "command": "carry_file_to_pane", "args": {"direction": "right"} },
+    { "keys": ["alt+shift+down"], "command": "carry_file_to_pane", "args": {"direction": "down"} },
+    { "keys": ["alt+shift+left"], "command": "carry_file_to_pane", "args": {"direction": "left"} },
+
+    // split to multiple carets
+    { "keys": ["ctrl+up"], "command": "select_lines", "args": {"forward": false} },
+    { "keys": ["ctrl+down"], "command": "select_lines", "args": {"forward": true} },
+
+    { "keys": ["ctrl+a"], "command": "find_all", "args": {"close_panel": true},
+        "context": [{"key": "panel", "operand": "find"}, {"key": "panel_has_focus"}]
+    },
+    { "keys": ["ctrl+r"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+    { "keys": ["ctrl+shift+r"], "command": "slurp_replace_string" },
+    // replace by default - f3 to skip
+    { "keys": ["enter"], "command": "replace_next", "context":
+        [{"key": "panel", "operand": "replace"}, {"key": "panel_has_focus"}]
+    },
+    { "keys": ["ctrl+k", "ctrl+f"],
+      "command": "chain",
+      "args": {
+        "commands": [
+          ["show_panel", {"panel": "find", "reverse": false}],
+          ["find_under_expand"],
+        ]
+      },
+    },
 ]
