@@ -1,3 +1,7 @@
 *.merged-ca-bundle
 *.user-ca-bundle
 *.last-run
+
+node_modules/
+User/Color Highlighter/icons/*.png
+User/Color Highlighter/themes/*.tmTheme

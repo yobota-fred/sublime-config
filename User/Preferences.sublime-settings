@@ -82,9 +82,11 @@
 		"/media/fred/Storage/dev/js-stack-from-scratch/lib",
 		"/media/fred/Storage/dev/js-stack-from-scratch/node_modules"
 	],
-	"font_size": 8,
+	"font_face": "Inconsolata",
+	"font_size": 10,
 	"ignored_packages":
 	[
+		"JavaScript",
 		"Vintage"
 	],
 	"indent_guide_options":

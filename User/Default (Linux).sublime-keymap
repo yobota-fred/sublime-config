@@ -170,4 +170,16 @@
             { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
         ]
     },
+
+    // tern
+    { "keys": ["f12"], "command": "tern_jump_to_def",
+      "context": [
+        {"key": "selector", "operand": "source.js"}
+      ]
+    },
+
+    { "keys": ["ctrl+shift+a"], "command": "expand_selection", "args": {"to": "tag"} },
+    { "keys": ["ctrl+shift+space"], "command": "expand_region" },
+
+    { "keys": ["ctrl+shift+alt+n"], "command": "new_snippet" },
 ]

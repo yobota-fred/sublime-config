@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+<kbd>Ctrl</kbd>
+]]></content>
+  <tabTrigger>kctrl</tabTrigger>
+  <scope>text.html.markdown.gfm</scope>
+  <description>&lt;kbd&gt;Ctrl&lt;/kbd&gt;</description>
+</snippet>

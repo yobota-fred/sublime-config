@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+<kbd>Alt</kbd>
+]]></content>
+  <tabTrigger>kalt</tabTrigger>
+  <scope>text.html.markdown.gfm</scope>
+  <description>&lt;kbd&gt;Alt&lt;/kbd&gt;</description>
+</snippet>

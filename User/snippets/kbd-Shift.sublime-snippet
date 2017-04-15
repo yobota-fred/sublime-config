@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+<kbd>Shift</kbd>
+]]></content>
+  <tabTrigger>kshift</tabTrigger>
+  <scope>text.html.markdown.gfm</scope>
+  <description>&lt;kbd&gt;Shift&lt;/kbd&gt;</description>
+</snippet>
