@@ -1,5 +1,13 @@
 {
 	"extensions":
 	[
-	]
+		"md"
+	],
+  "trim_trailing_white_space_on_save": true,
+  "mde.auto_increment_ordered_list_number": false,
+  "caret_style": "solid",
+  "caret_extra_width": 1,
+  "draw_centered": false,
+  "line_numbers": true,
+  "color_scheme": "Packages/Boxy Theme/schemes/Boxy Monokai.tmTheme",
 }
