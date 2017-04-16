@@ -1,0 +1,4 @@
+{
+  "cmd" : ["sensible-browser", "${file_name}"],
+  "selector": ["text.html.basic", "text.html.markdown.gfm"],
+}

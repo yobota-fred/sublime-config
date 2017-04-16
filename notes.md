@@ -47,11 +47,10 @@ See _Sublime Text Power User_ section 3.1.6.
 * <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>space</kbd> selects the contents of the
     current region (using [ExpandRegion][pkg:expand-region]).
 
-    ```python
+    ```python  
     class Something:
         def wicked(self):
-            self.this = way("comes")
-
+            self.this = way("comes")  
 
     class Another:
         def day(self):
@@ -73,6 +72,82 @@ See _Sublime Text Power User_ section 3.1.6.
     ```
 
 * <kbd>Ctrl</kbd><kbd>'</kbd> selects the contents of the current quotes (using [Select Quoted][pkg:select-quoted])
+
+
+## Build systems
+Build systems let you run system commands without leaving Sublime Text. This
+may be useful for e.g. running compilation, tests, documentation or some other
+Grunt/Gulp-like build task (indeed, could be integrated with a tool such as
+Grunt or Gulp) easily. Could even set up to run on save.
+
+To configure create a `.sublime-build` file,. It needs to specify a `cmd`, and there are several optional fields:
+
+* `selector` restricts what scope this build system is appropriate for
+* `windows`/`osx`/`linux` allow specifying platform-dependent overrides
+* `variants` allow specifying multiple tasks within a single config
+
+Example (open current file in browser if it makes sense):
+
+```json
+{
+  "cmd" : ["sensible-browser", "${file_name}"],
+  "selector": ["text.html.basic", "text.html.markdown.gfm"],
+}
+```
+
+
+## Snippets
+Snippets speed up writing repetitive boilerplate code. They are written as
+simple XML documents. The only required tag is the `<content>`, which is
+automatically populated when by the "New Snippet" menu option. Do not delete
+the "CDATA" parts - only the contents on line 3. It is usually helpful to
+include all the optional tags:
+
+* `<tabTrigger>` is the key sequence that will expand to this snippet when
+    <kbd>Tab</kbd> is pressed
+* `<scope>` is a comma-separated list of scopes where this snippet can be
+    used
+* `<description>` is what will appear in the Command Palette
+
+Example (shortcut for rendering <kbd>Ctrl</kbd> in GFM):
+
+```xml
+<snippet>
+  <content><![CDATA[
+<kbd>Ctrl</kbd>
+]]></content>
+  <tabTrigger>kctrl</tabTrigger>
+  <scope>text.html.markdown.gfm</scope>
+  <description>&lt;kbd&gt;Ctrl&lt;/kbd&gt;</description>
+</snippet>
+```
+
+Snippets can also include variables. There are several builtin choices, 
+including `$TM_FILENAME` and `$SELECTION`. A full list is available 
+[here][ref:snippets]. You can also define your own variables in a 
+`.sublime-options` file.
+
+Field markers allow for per-snippet variables - when inserting the snippet you 
+can tab through the markers to fill in the values.
+
+Example (to prove what can be achieved):
+
+```xml
+<snippet>
+  <content><![CDATA[
+Current file: $TM_FILENAME
+Current file without extension: ${TM_FILENAME/(.*)\.\w+$/$1}
+Some variable: ${1:optional default}
+That variable, transformed: ${1/^(\w)|(?:_(\w))/(?1\U$1:)(?2 \U$2:)/g}
+]]></content>
+<!-- output:
+Current file: notes.md
+Current file without extension: notes
+Some variable: my custom field
+That variable, transformed: My! Custom! Field!
+-->
+</snippet>
+```
 
 
 ## Markdown
@@ -98,4 +173,5 @@ with multiple carets to achieve some very powerful transformations in just a
 few keystrokes.
 
 [pkg:select-quoted]: https://github.com/int3h/SublimeSelectQuoted
-[pkg:expand-region]: https://github.com/aronwoost/sublime-expand-region
+[pkg:expand-region]: https://github.com/aronwoost/sublime-expand-regihereon
+[ref:snippets]: http://docs.sublimetext.info/en/latest/extensibility/snippets.html#environment-variables

@@ -66,11 +66,21 @@
       "command": "chain",
       "args": {
         "commands": [
-          ["show_panel", {"panel": "find", "reverse": false}],
-          ["find_under_expand"],
+          ["show_panel", {"panel": "find", "reverse": false, "focus": false}],
+          ["find_under_expand_skip"],
         ]
       },
     },
+    { "keys": ["ctrl+alt+a"],
+      "command": "chain",
+      "args": {
+        "commands": [
+          ["find_under_expand"],
+          ["find_all"]
+        ]
+      },
+    },
+    { "keys": ["ctrl+alt+f"], "command": "find_under_expand_skip" },
 
     // override MarkdownEditing default
     { "keys": ["shift+tab"], "command": "unindent", "context":
