@@ -4,7 +4,9 @@ import { named } from './second';
 const x = 'something';
 
 x.concat('another');
+// TODO: check they show up
 hello();
+// TODO JIRA-123: does this also show up?
 named(1, 3);
 
 /**

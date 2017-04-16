@@ -24,6 +24,7 @@
     { "keys": ["alt+delete"], "command": "advanced_new_file_delete" },
     { "keys": ["alt+shift+delete"], "command": "advanced_new_file_delete", "args": {"current": true} },
     { "keys": ["alt+m"], "command": "advanced_new_file_move" },
+    { "keys": ["f8"], "command": "advanced_new_file_move" },
 
     // switch default paste behaviour
     { "keys": ["ctrl+v"], "command": "paste_and_indent" },

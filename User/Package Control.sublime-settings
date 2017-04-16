@@ -11,6 +11,7 @@
 		"Babel",
 		"Boxy Theme",
 		"Boxy Theme Addon - Font Face",
+		"BracketHighlighter",
 		"Chain of Command",
 		"CloseOtherWindows",
 		"CodeComplice",
@@ -22,6 +23,7 @@
 		"HTML-CSS-JS Prettify",
 		"List stylesheet variables",
 		"MarkdownEditing",
+		"MarkdownTOC",
 		"NodeRequirer",
 		"Oceanic Next Color Scheme",
 		"Origami",
@@ -33,7 +35,9 @@
 		"SublimeLinter-contrib-sass-lint",
 		"SublimeLinter-flow",
 		"Sublimerge 3",
+		"SublimeServer",
 		"Syntax Highlighting for Sass",
-		"tern_for_sublime"
+		"tern_for_sublime",
+		"TodoReview"
 	]
 }

@@ -1,0 +1,9 @@
+{
+  "exclude_folders": [
+    "*.git*",
+    "node_modules*",
+  ],
+  "case_sensitive": false,
+  "render_include_folder": true,
+  "render_folder_depth": 3
+}
