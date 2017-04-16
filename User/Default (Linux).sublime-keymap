@@ -192,4 +192,16 @@
     { "keys": ["ctrl+shift+space"], "command": "expand_region" },
 
     { "keys": ["ctrl+shift+alt+n"], "command": "new_snippet" },
+
+    // sublimerge
+    { "keys": ["ctrl+k", "n"], "command": "sublimerge_go_down", "context": [
+        {"key": "setting.is_sublimerge_view", "operator": "equal", "operand": true, "match_all": true}
+    ]},
+    { "keys": ["ctrl+k", "p"], "command": "sublimerge_go_up", "context": [
+        {"key": "setting.is_sublimerge_view", "operator": "equal", "operand": true, "match_all": true}
+    ]},
+    // diff against revision
+    { "keys": ["alt+d"], "command": "sublimerge_compare_to_revision"},
+    // history
+    { "keys": ["alt+h"], "command": "sublimerge_show_changes_in_revision"},
 ]

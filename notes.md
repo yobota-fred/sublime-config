@@ -50,7 +50,7 @@ See _Sublime Text Power User_ section 3.1.6.
     ```python  
     class Something:
         def wicked(self):
-            self.this = way("comes")  
+            self.this = way("comes")
 
     class Another:
         def day(self):
@@ -150,6 +150,14 @@ That variable, transformed: My! Custom! Field!
 ```
 
 
+## Git
+There are a couple of great packages for Git. [GitGutter][pkg:git-gutter] adds 
+symbols for lines added/removed/changed in the gutter (next to line numbers). 
+[Sublimerge][pkg:sublimerge] is a paid package that handles 2- and 3-way diffs/
+merges from within Sublime. It integrates well with Git, allowing you to view 
+history and changes made.
+
+
 ## Markdown
 MarkdownEditing comes with some great extras for writing in Markdown. Notable
 features include syntax highlighting inside fenced code blocks, automatic
@@ -173,5 +181,7 @@ with multiple carets to achieve some very powerful transformations in just a
 few keystrokes.
 
 [pkg:select-quoted]: https://github.com/int3h/SublimeSelectQuoted
-[pkg:expand-region]: https://github.com/aronwoost/sublime-expand-regihereon
+[pkg:expand-region]: https://github.com/aronwoost/sublime-expand-region
 [ref:snippets]: http://docs.sublimetext.info/en/latest/extensibility/snippets.html#environment-variables
+[pkg:git-gutter]: https://github.com/jisaacks/GitGutter
+[pkg:sublimerge]: http://www.sublimerge.com/sm3/
