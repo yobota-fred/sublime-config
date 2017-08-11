@@ -205,4 +205,7 @@
     { "keys": ["alt+d"], "command": "sublimerge_compare_to_revision"},
     // history
     { "keys": ["alt+h"], "command": "sublimerge_show_changes_in_revision"},
+    
+    { "keys": ["ctrl+shift+s"], "command": "save_all" },
+    { "keys": ["ctrl+shift+g"], "command": "goto_symbol_in_project" },
 ]

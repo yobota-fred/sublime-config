@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+create or replace function ${1:core}.${2:${TM_FILENAME/(\w+)\.(\w+)$/\1/g}}(
+  ${3:}
+) 
+as
+\$BODY\$
+DECLARE
+  ${4:}
+BEGIN
+
+  ${5:}
+
+END;
+\$BODY\$
+LANGUAGE plpgsql volatile;
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>func</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.pgsql</scope>
+	<description>New Stored Procedure</description>
+</snippet>

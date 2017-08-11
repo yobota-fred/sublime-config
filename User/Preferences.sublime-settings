@@ -11,6 +11,26 @@
 			"selector": "source.js"
 		}
 	],
+	"binary_file_patterns":
+	[
+		"*.dds",
+		"*.eot",
+		"*.gif",
+		"*.ico",
+		"*.jar",
+		"*.jpeg",
+		"*.jpg",
+		"*.pdf",
+		"*.png",
+		"*.swf",
+		"*.tga",
+		"*.ttf",
+		"*.zip",
+		"/home/fred/dev/pcwrefer/src/staticfiles/**",
+		"/home/fred/dev/pcwrefer/test_reports/**",
+		"test_reports/*",
+		"staticfiles/*"
+	],
 	"bold_folder_labels": true,
 	"caret_extra_bottom": 1,
 	"caret_extra_top": 1,
@@ -42,10 +62,15 @@
 	"extra_folder_exclude_patterns":
 	[
 		"node_modules",
+		"bower_components",
 		".svn",
 		".git",
 		".hg",
-		"CVS"
+		"CVS",
+		"__pycache__",
+		"staticfiles",
+		"test_reports",
+		"inital_schemata"
 	],
 	"fade_fold_buttons": false,
 	"file_exclude_patterns":
@@ -86,6 +111,7 @@
 	"font_size": 10,
 	"ignored_packages":
 	[
+		"Anaconda",
 		"JavaScript",
 		"Vintage"
 	],
@@ -127,5 +153,6 @@
 	"theme_tab_arrows_hidden": true,
 	"theme_tab_selected_overlined": true,
 	"theme_tooltips_font_lg": true,
-	"translate_tabs_to_spaces": true
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": false
 }

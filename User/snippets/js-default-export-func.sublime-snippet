@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+const ${TM_FILENAME/(\w+)\.(\w+)$/\1/g} = ${1:(\{
+	$2
+\})};
+
+export default ${TM_FILENAME/(\w+)\.(\w+)$/\1/g};
+
+]]></content>
+	<tabTrigger>fexp</tabTrigger>
+	<description>Default export arrow function</description>
+	<scope>source.js</scope>
+</snippet>

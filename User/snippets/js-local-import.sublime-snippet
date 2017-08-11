@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+import $1 from './$1';
+]]></content>
+	<tabTrigger>limp</tabTrigger>
+	<description>Local import</description>
+	<scope>source.js</scope>
+</snippet>
