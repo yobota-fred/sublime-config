@@ -21,6 +21,7 @@
 		"GitGutter",
 		"GitSavvy",
 		"HTML-CSS-JS Prettify",
+		"JSON Reindent",
 		"List stylesheet variables",
 		"MarkdownEditing",
 		"MarkdownTOC",
@@ -35,13 +36,13 @@
 		"SublimeLinter",
 		"SublimeLinter-contrib-sass-lint",
 		"SublimeLinter-contrib-sqlint",
+		"SublimeLinter-eslint",
 		"SublimeLinter-flake8",
 		"SublimeLinter-flow",
 		"Sublimerge 3",
 		"SublimeServer",
 		"Syntax Highlighting for Sass",
 		"tern_for_sublime",
-		"TodoReview",
-		"SublimeLinter-eslint"
+		"TodoReview"
 	]
 }
