@@ -10,8 +10,6 @@
 		"Anaconda",
 		"AutoFileName",
 		"Babel",
-		"Boxy Theme",
-		"Boxy Theme Addon - Font Face",
 		"BracketHighlighter",
 		"Chain of Command",
 		"CloseOtherWindows",
@@ -35,7 +33,6 @@
 		"Select Quoted",
 		"SideBarEnhancements",
 		"SublimeLinter",
-		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-contrib-sass-lint",
 		"SublimeLinter-contrib-sqlint",
 		"SublimeLinter-flake8",
@@ -44,6 +41,7 @@
 		"SublimeServer",
 		"Syntax Highlighting for Sass",
 		"tern_for_sublime",
-		"TodoReview"
+		"TodoReview",
+		"SublimeLinter-eslint"
 	]
 }

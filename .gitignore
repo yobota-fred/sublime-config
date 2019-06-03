@@ -5,3 +5,4 @@
 node_modules/
 User/Color Highlighter/icons/*.png
 User/Color Highlighter/themes/*.tmTheme
+User/Package Control.cache/
